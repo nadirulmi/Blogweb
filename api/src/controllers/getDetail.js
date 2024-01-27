@@ -10,7 +10,7 @@ const getDetail = async (req, res) => {
         "app-id": APP_ID,
       },
     });
-    console.log(response.data);
+    
     if (response.data) res.status(200).json(response.data);
   } catch (error) {
     res.status(500).json({ error: error.message });
